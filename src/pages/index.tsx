@@ -38,11 +38,11 @@ const Home: NextPage = () => {
         <h2>Trynn Zala</h2>
         <p>With the moniker of Console Cowboy, Trynn is the tech nerd of the podcast.
           Providing the ever-needed IT support as well as dark humor and frequent 
-          "Interesting Facts". His favorite villian is Light from <i>Death Note</i>
+          &quot;Interesting&quot; Facts. His favorite villian is Light from <i>Death Note</i>
         </p>
         <h2>X Zala</h2>
         <p>Known as the Transient Vampire X brings a creative and ghoulish touch
-          to the podcast, balancing out Trynn's technical side with the artsy and
+          to the podcast, balancing out Trynn&apos;s technical side with the artsy and
           macabre. Their favorite villian is the alien from <i>Annihilation</i>
         </p>
       </section>
