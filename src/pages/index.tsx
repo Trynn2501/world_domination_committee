@@ -20,9 +20,12 @@ const Home: NextPage = () => {
       <link href="//db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT" rel="stylesheet" type="text/css"/> 
     </Head>
 
-    <main>
+    <main className="bg-[#000C02]">
       <header>
-        <h1 className='font-europe'>World Domination Committee</h1>
+        <h1 className='text-[#35FF53]'><span className="font-europe">W</span>
+          <span>orld </span><span className="font-europe">D</span><span>omination </span>
+          <span className="font-europe">C</span><span>ommittee</span>
+        </h1>
         <nav>
           <a href="#home">Home</a>
           <a href="#about">About</a>
@@ -40,22 +43,30 @@ const Home: NextPage = () => {
           behind what makes a villian.
         </p>
         <h4>What makes A bad villian good, and a good villain better</h4>
-        <h2>Your Hosts</h2>
+        <h2 className='text-[#35FF53]'><span className="font-europe">Y</span><span>our </span>
+          <span className="font-europe">H</span><span>osts</span>
+        </h2>
         <Image src="/images/Trynn Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="200px" height="250px" />
         <Image src="/images/X Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="200px" height="250px" />
-        <h2>Trynn Zala</h2>
+        <h2 className='text-[#35FF53]'><span className="font-europe">T</span><span>rynn </span>
+          <span className="font-europe">Z</span><span>ala</span>
+        </h2>
         <p>With the moniker of Console Cowboy, Trynn is the tech nerd of the podcast.
           Providing the ever-needed IT support as well as dark humor and frequent 
           &quot;Interesting&quot; Facts. His favorite villian is Light from <i>Death Note</i>
         </p>
-        <h2>X Zala</h2>
+        <h2 className='text-[#35FF53]'><span className="font-europe">X </span>
+          <span className="font-europe">Z</span>ala
+        </h2>
         <p>Known as the Transient Vampire X brings a creative and ghoulish touch
           to the podcast, balancing out Trynn&apos;s technical side with the artsy and
           macabre. Their favorite villian is the alien from <i>Annihilation</i>
         </p>
       </section>
       <section>
-        <h2>Latest Episodes</h2>
+        <h2 className='text-[#35FF53]'><span className="font-europe">L</span><span>atest </span>
+          <span className="font-europe">E</span><span>pisodes</span>
+        </h2>
         <iframe src="https://player.rss.com/worlddominationcommittee/679294?theme=dark" title="The World Domination Committee" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
         <span>
           <a href="#">View Backlog</a>
@@ -64,7 +75,7 @@ const Home: NextPage = () => {
         </span>
       </section>
       <section>
-        <h2>Contact</h2>
+        <h2 className='text-[#35FF53]'><span className="font-europe">C</span><span>ontact</span></h2>
         <p>Become a member of the world domination committee today</p>
         <div className="social_media_icons">
           <FontAwesomeIcon icon={faEnvelope}  className="mr-2"/>
