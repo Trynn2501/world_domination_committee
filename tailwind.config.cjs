@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'europe': ['Europe', 'cursive'],
+        'montserrat': ['Montserrat', 'regular'],
+        'homizio': ['Homizio', 'regular'],
       }
     },
   },
