@@ -67,7 +67,6 @@ const Home: NextPage = () => {
           <span className="font-europe">H</span><span>osts</span>
         </h2>
         <Image src="/images/Trynn Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="200px" height="250px" />
-        <Image src="/images/X Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="200px" height="250px" />
         <h2 className="text-[#35FF53]"><span className="font-europe">T</span><span>rynn </span>
           <span className="font-europe">Z</span><span>ala</span>
         </h2>
@@ -75,6 +74,7 @@ const Home: NextPage = () => {
           Providing the ever-needed IT support as well as dark humor and frequent 
           &quot;Interesting&quot; Facts. His favorite villian is Light from <i>Death Note</i>
         </p>
+        <Image src="/images/X Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="200px" height="250px" />
         <h2 className="text-[#35FF53]"><span className="font-europe">X </span>
           <span className="font-europe">Z</span>ala
         </h2>
