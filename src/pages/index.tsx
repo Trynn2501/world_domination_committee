@@ -4,7 +4,7 @@ import Head from "next/head";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMugHot, faGhost } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
-import { faYoutube, faTwitter, faInstagram, } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube, faTwitter, faInstagram, faPatreon } from '@fortawesome/free-brands-svg-icons';
 import { useRouter } from 'next/router';
 import SpotifyPlayer from 'react-spotify-player';
 
@@ -59,14 +59,14 @@ const Home: NextPage = () => {
             </p>
           </div>
         </div>
-        <h4 className="text-[#23C438] font-montserrat text-center text-4xl">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
+        <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
         <h2 className="text-[#35FF53] text-center text-5xl"><span className="font-europe">Y</span><span>our </span>
           <span className="font-europe">H</span><span>osts</span>
         </h2>
-        <div className="flex items-center justify-center text-center">
+        <div className="grid grid-cols-2 text-center my-12 mx-12 space-x-32">
           <div>
-            <Image src="/images/Trynn Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="200px" height="250px" />
-            <h2 className="text-[#35FF53] text-5xl"><span className="font-europe">T</span><span>rynn </span>
+            <Image src="/images/Trynn Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="300px" height="250px" />
+            <h2 className="text-[#35FF53] text-5xl mt-6 mb-4"><span className="font-europe">T</span><span>rynn </span>
               <span className="font-europe">Z</span><span>ala</span>
             </h2>
             <p className="text-[#1A8F29] text-2xl">With the moniker of Console Cowboy, Trynn is the tech nerd of the podcast.
@@ -75,8 +75,8 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div>
-            <Image src="/images/X Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="200px" height="250px" />
-            <h2 className="text-[#35FF53] text-5xl"><span className="font-europe">X </span>
+            <Image src="/images/X Headshot.jpg" alt="Photo of Xenyth" layout="fixed" width="300px" height="250px" />
+            <h2 className="text-[#35FF53] text-5xl mt-6 mb-4"><span className="font-europe">X </span>
               <span className="font-europe">Z</span>ala
             </h2>
             <p className="text-[#1A8F29] text-2xl">Known as the Transient Vampire X brings a creative and ghoulish touch
@@ -87,8 +87,8 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section>
-        <h2 className="text-[#35FF53] text-center text-5xl"><span className="font-europe">L</span><span>atest </span>
-          <span className="font-europe">E</span><span>pisodes</span>
+        <h2 className="text-[#35FF53] text-center text-5xl mb-10"><span className="font-europe">L</span><span>atest </span>
+          <span className="font-europe">E</span><span>pisode</span>
         </h2>
           <SpotifyPlayer
             uri="https://open.spotify.com/show/0NtellRMzIghmTyK8TXcud?si=ac0874086f764bcc"
@@ -96,20 +96,18 @@ const Home: NextPage = () => {
             view={view}
             theme={theme}
           />
-        <span>
-          <a href="#" className="block text-center text-[#1D9B2D] mb-8">PATREON</a>
-        </span>
       </section>
-      <section>
-        <h2 className="text-[#35FF53] text-center text-5xl"><span className="font-europe">C</span><span>ontact</span></h2>
-        <p className="text-[#1A8F29] text-center text-3xl">BECOME A MEMBER OF THE WORLD DOMINATION COMMITTEE TODAY</p>
-        <div className="social_media_icons flex justify-center space-x-32 mb-8">
+      <section className="mb-12">
+        <h2 className="text-[#35FF53] text-center text-5xl mb-8"><span className="font-europe">C</span><span>ontact</span></h2>
+        <p className="text-[#1A8F29] text-center text-3xl mb-12">BECOME A MEMBER OF THE WORLD DOMINATION COMMITTEE TODAY</p>
+        <div className="social_media_icons flex justify-center space-x-24 mb-8">
           <FontAwesomeIcon icon={faEnvelope}  className="mr-2 text-[#35FF53] w-16"/>
           <FontAwesomeIcon icon={faYoutube}  className="mr-2 text-[#35FF53] w-16"/>
           <FontAwesomeIcon icon={faTwitter}  className="mr-2 text-[#35FF53] w-16"/>
           <FontAwesomeIcon icon={faInstagram}  className="mr-2 text-[#35FF53] w-16"/>
           <FontAwesomeIcon icon={faMugHot}  className="mr-2 text-[#35FF53] w-16"/>
           <FontAwesomeIcon icon={faGhost}  className="mr-2 text-[#35FF53] w-16"/>
+          <FontAwesomeIcon icon={faPatreon}  className="mr-2 text-[#35FF53] w-16"/>
           </div>
       </section>
       <footer className="BadBabyLogo bg-[#24C73A] w-full h-full text-center text-3xl" onClick={() => router.push("https://badbabystudios.com")}>
