@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Head from "next/head";
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMugHot, faGhost } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
@@ -27,43 +28,42 @@ const Home: NextPage = () => {
       <link rel="icon" href="/images/wdc cover v04.png"/>
     </Head>
 
-    <main className="bg-[#000C02]">
+    <main className="bg-[#000C02]  caret-transparent">
       <header>
         <h1 className="text-[#35FF53] text-center text-5xl pt-12 mb-10"><span className="font-europe">W</span>
           <span>orld </span><br/><span className="font-europe">D</span><span>omination </span>
           <br/><span className="font-europe">C</span><span>ommittee</span>
         </h1>
-        <nav className="block text-center text-4xl space-x-28">
-          <a href="#home" className="text-[#1D9B2D] font-montserrat"><b>HOME</b></a>
-          <a href="#about" className="text-[#1D9B2D] font-montserrat"><b>ABOUT</b></a>
-          <a href="#episodes" className="text-[#1D9B2D] font-montserrat"><b>EPISODES</b></a>
-          <a href="#patreon" className="text-[#1D9B2D] font-montserrat"><b>PATREON</b></a>
-          <a href="#contact" className="text-[#1D9B2D] font-montserrat"><b>CONTACT</b></a>
+        <nav className="block text-center text-4xl space-x-44">
+          <Link href="#about"><b className="text-[#1D9B2D] font-montserrat">ABOUT</b></Link>
+          <Link href="#episode"><b className="text-[#1D9B2D] font-montserrat">EPISODES</b></Link>
+          <Link href="#contact"><b className="text-[#1D9B2D] font-montserrat">CONTACT</b></Link>
+          <Link href="https://www.patreon.com/worlddominationcommittee"><b className="text-[#1D9B2D] font-montserrat">PATREON</b></Link>
         </nav>
       </header>
-      <section>
-        <div className="flex h-[450px] mt-8 mb-8 mx-12 pr-24">
-          <div className="mr-8">
-            <Image src="/images/wdc cover v04.png" alt="World Domination Committee logo with a demon repersented with green in a black background" layout="fixed" width="500px" height="450px" />
-          </div>
-          <div className="mr-8">
-            <p className="text-[#1A8F29] text-2xl mb-16">Submit to the World Domination Committee, a monthly podcast
-              hosted by neutral evil Trynn Zala and chaotic Neutral X Zala.
-            </p>
-            <h4 className="text-[#23C438] font-montserrat text-4xl mb-16">THE VILLAIN&apos;S ARC</h4>
-            <p className="text-[#1A8F29] text-2xl">Follow along as the Zala cover all things villains from
-              pop culture icons such as Jafaar and Hal 9000 to real-life figures
-              like Dick Cheney and the Queen. The Zalas explore the villians journey as
-              opposed to that of the hero, the villians alignment, and the philosophy/ethics
-              behind what makes a villian.
-            </p>
-          </div>
+      <section className="flex h-[450px] mt-12 mb-8 mx-12 pr-24">
+        <div className="mr-8">
+          <Image src="/images/wdc cover v04.png" alt="World Domination Committee logo with a demon repersented with green in a black background" layout="fixed" width="500px" height="450px" />
         </div>
-        <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
+        <div className="mr-8">
+          <p className="text-[#1A8F29] text-2xl mb-16">Submit to the World Domination Committee, a monthly podcast
+            hosted by neutral evil Trynn Zala and chaotic Neutral X Zala.
+          </p>
+          <h4 className="text-[#23C438] font-montserrat text-4xl mb-16">THE VILLAIN&apos;S ARC</h4>
+          <p className="text-[#1A8F29] text-2xl">Follow along as the Zalaz cover all things villains from
+            pop culture icons such as Jafaar and Hal 9000 to real-life figures
+            like Dick Cheney and Margaret Thatcher. The Zalas explore the villians journey as
+            opposed to that of the hero, the villians alignment, and the philosophy/ethics
+            behind what makes a villian.
+          </p>
+        </div>
+      </section>
+      <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
+      <section id="about">
         <h2 className="text-[#35FF53] text-center text-5xl"><span className="font-europe">Y</span><span>our </span>
           <span className="font-europe">H</span><span>osts</span>
         </h2>
-        <div className="grid grid-cols-2 text-center my-12 mx-12 space-x-32">
+        <div className="grid grid-cols-2 text-center my-12 mx-12 px-12 space-x-16">
           <div>
             <Image src="/images/Trynn Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="300px" height="250px" />
             <h2 className="text-[#35FF53] text-5xl mt-6 mb-4"><span className="font-europe">T</span><span>rynn </span>
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="episode">
         <h2 className="text-[#35FF53] text-center text-5xl mb-10"><span className="font-europe">L</span><span>atest </span>
           <span className="font-europe">E</span><span>pisode</span>
         </h2>
@@ -97,17 +97,17 @@ const Home: NextPage = () => {
             theme={theme}
           />
       </section>
-      <section className="mb-12">
+      <section id="contact" className="mb-12">
         <h2 className="text-[#35FF53] text-center text-5xl mb-8"><span className="font-europe">C</span><span>ontact</span></h2>
         <p className="text-[#1A8F29] text-center text-3xl mb-12">BECOME A MEMBER OF THE WORLD DOMINATION COMMITTEE TODAY</p>
         <div className="social_media_icons flex justify-center space-x-24 mb-8">
-          <FontAwesomeIcon icon={faEnvelope}  className="mr-2 text-[#35FF53] w-16"/>
-          <FontAwesomeIcon icon={faYoutube}  className="mr-2 text-[#35FF53] w-16"/>
-          <FontAwesomeIcon icon={faTwitter}  className="mr-2 text-[#35FF53] w-16"/>
-          <FontAwesomeIcon icon={faInstagram}  className="mr-2 text-[#35FF53] w-16"/>
-          <FontAwesomeIcon icon={faMugHot}  className="mr-2 text-[#35FF53] w-16"/>
-          <FontAwesomeIcon icon={faGhost}  className="mr-2 text-[#35FF53] w-16"/>
-          <FontAwesomeIcon icon={faPatreon}  className="mr-2 text-[#35FF53] w-16"/>
+          <Link href="mailto:committee@worlddomination.ca" target="_blank"><span className="text-center"><FontAwesomeIcon icon={faEnvelope}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
+          <Link href="https://www.youtube.com/channel/UCS8p_KjjJELc1So8gYv7usg"><span className="text-center"><FontAwesomeIcon icon={faYoutube}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
+          <Link href="https://twitter.com/TheWDCPodcast"><span className="text-center"><FontAwesomeIcon icon={faTwitter}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
+          <Link href="https://www.instagram.com/worlddominationcommittee/"><span className="text-center"><FontAwesomeIcon icon={faInstagram}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
+          <Link href="https://trynn.tech/"><span className="text-center"><FontAwesomeIcon icon={faMugHot}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
+          <Link href="https://tapas.io/series/WWDC/"><span className="text-center"><FontAwesomeIcon icon={faGhost}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
+          <Link href="https://www.patreon.com/worlddominationcommittee"><span className="text-center"><FontAwesomeIcon icon={faPatreon}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
           </div>
       </section>
       <footer className="BadBabyLogo bg-[#24C73A] w-full h-full text-center text-3xl" onClick={() => router.push("https://badbabystudios.com")}>
