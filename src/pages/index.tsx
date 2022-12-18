@@ -58,7 +58,7 @@ const Home: NextPage = () => {
           </p>
         </div>
       </section>
-      <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
+      <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8 mt-6">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
       <section id="about">
         <h2 className="text-[#35FF53] text-center text-5xl"><span className="font-europe">Y</span><span>our </span>
           <span className="font-europe">H</span><span>osts</span>
