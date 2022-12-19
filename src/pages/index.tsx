@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 
     <main className="bg-[#000C02]  caret-transparent">
       <header>
-        <h1 className="text-[#35FF53] text-center text-5xl pt-12 mb-10"><span className="font-europe">W</span>
+        <h1 className="glow text-center text-5xl pt-12 mb-10"><span className="font-europe">W</span>
           <span>orld </span><br/><span className="font-europe">D</span><span>omination </span>
           <br/><span className="font-europe">C</span><span>ommittee</span>
         </h1>
@@ -58,7 +58,9 @@ const Home: NextPage = () => {
           </p>
         </div>
       </section>
-      <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8 mt-6">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
+      <section>
+        <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8 mt-6">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
+      </section>
       <section id="about">
         <h2 className="text-[#35FF53] text-center text-5xl"><span className="font-europe">Y</span><span>our </span>
           <span className="font-europe">H</span><span>osts</span>
