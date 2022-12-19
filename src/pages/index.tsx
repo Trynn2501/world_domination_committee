@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           <Link href="#about"><b className="text-[#1D9B2D] font-montserrat">ABOUT</b></Link>
           <Link href="#episode"><b className="text-[#1D9B2D] font-montserrat">EPISODES</b></Link>
           <Link href="#contact"><b className="text-[#1D9B2D] font-montserrat">CONTACT</b></Link>
-          <Link href="https://www.patreon.com/worlddominationcommittee"><b className="text-[#1D9B2D] font-montserrat">PATREON</b></Link>
+          <Link href="https://www.patreon.com/worlddominationcommittee"><a target="_blank"><b className="text-[#1D9B2D] font-montserrat">PATREON</b></a></Link>
         </nav>
       </header>
       <section className="flex h-[450px] mt-12 mb-8 mx-12 pr-24">
@@ -101,20 +101,65 @@ const Home: NextPage = () => {
         <h2 className="text-[#35FF53] text-center text-5xl mb-8"><span className="font-europe">C</span><span>ontact</span></h2>
         <p className="text-[#1A8F29] text-center text-3xl mb-12">BECOME A MEMBER OF THE WORLD DOMINATION COMMITTEE TODAY</p>
         <div className="social_media_icons flex justify-center space-x-24 mb-8">
-          <Link href="mailto:committee@worlddomination.ca" target="_blank"><span className="text-center"><FontAwesomeIcon icon={faEnvelope}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
-          <Link href="https://www.youtube.com/channel/UCS8p_KjjJELc1So8gYv7usg"><span className="text-center"><FontAwesomeIcon icon={faYoutube}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
-          <Link href="https://twitter.com/TheWDCPodcast"><span className="text-center"><FontAwesomeIcon icon={faTwitter}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
-          <Link href="https://www.instagram.com/worlddominationcommittee/"><span className="text-center"><FontAwesomeIcon icon={faInstagram}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
-          <Link href="https://trynn.tech/"><span className="text-center"><FontAwesomeIcon icon={faMugHot}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
-          <Link href="https://tapas.io/series/WWDC/"><span className="text-center"><FontAwesomeIcon icon={faGhost}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
-          <Link href="https://www.patreon.com/worlddominationcommittee"><span className="text-center"><FontAwesomeIcon icon={faPatreon}  className="mr-2 text-[#35FF53] w-16"/></span></Link>
+          <Link href="mailto:committee@worlddomination.ca"><a target="_blank">
+            <span className="text-center">
+              <FontAwesomeIcon icon={faEnvelope}  className="mr-2 text-[#35FF53] w-16"/>
+            </span>
+            </a>
+          </Link>
+          <Link href="https://www.youtube.com/channel/UCS8p_KjjJELc1So8gYv7usg">
+            <a target="_blank">
+              <span className="text-center">
+                <FontAwesomeIcon icon={faYoutube}  className="mr-2 text-[#35FF53] w-16"/>
+              </span>
+            </a>
+          </Link>
+          <Link href="https://twitter.com/TheWDCPodcast">
+            <a target="_blank">
+              <span className="text-center">
+                <FontAwesomeIcon icon={faTwitter} className="mr-2 text-[#35FF53] w-16"/>
+              </span>
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/worlddominationcommittee/">
+            <a target="_blank">
+              <span className="text-center">
+              <FontAwesomeIcon icon={faInstagram}  className="mr-2 text-[#35FF53] w-16"/>
+              </span>
+            </a>
+          </Link>
+          <Link href="https://trynn.tech/">
+            <a target="_blank">
+              <span className="text-center">
+                <FontAwesomeIcon icon={faMugHot}  className="mr-2 text-[#35FF53] w-16"/>
+              </span>
+            </a>
+          </Link>
+          <Link href="https://tapas.io/series/WWDC/">
+            <a target="_blank">
+              <span className="text-center">
+                <FontAwesomeIcon icon={faGhost}  className="mr-2 text-[#35FF53] w-16"/>
+              </span>
+            </a>
+          </Link>
+          <Link href="https://www.patreon.com/worlddominationcommittee">
+            <a target="_blank">
+              <span className="text-center">
+                <FontAwesomeIcon icon={faPatreon}  className="mr-2 text-[#35FF53] w-16"/>
+              </span>
+            </a>
+          </Link>
           </div>
       </section>
-      <footer className="BadBabyLogo bg-[#24C73A] w-full h-full text-center text-3xl" onClick={() => router.push("https://badbabystudios.com")}>
-        <span className="inline-flex flex-row py-12">
-          <FontAwesomeIcon icon={faCopyright}  className="w-8 h-8 mr-2"/>
-          <h3 className="font-montserrat"><b>BAD BABY STUDIOS</b></h3>
-        </span>
+      <footer className="BadBabyLogo bg-[#24C73A] w-full h-full text-center text-3xl">
+        <Link href="https://badbabystudios.com/">
+          <a target="_blank">
+            <span className="inline-flex flex-row py-12">
+              <FontAwesomeIcon icon={faCopyright}  className="w-8 h-8 mr-2"/>
+              <h3 className="font-montserrat"><b>BAD BABY STUDIOS</b></h3>
+            </span>
+          </a>
+        </Link>
       </footer>
     </main>
   </>)
