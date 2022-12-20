@@ -30,11 +30,11 @@ const Home: NextPage = () => {
 
     <main className="bg-[#000C02]  caret-transparent">
       <header>
-        <h1 className="glow text-center text-5xl pt-12 mb-10"><span className="font-europe">W</span>
+        <h1 className="text-[#35FF53] glow text-center text-5xl pt-12 mb-10"><span className="font-europe">W</span>
           <span>orld </span><br/><span className="font-europe">D</span><span>omination </span>
           <br/><span className="font-europe">C</span><span>ommittee</span>
         </h1>
-        <nav className="block text-center text-4xl space-x-44">
+        <nav className="block text-center text-4xl space-x-32">
           <Link href="#about"><b className="text-[#1D9B2D] font-montserrat">ABOUT</b></Link>
           <Link href="#episode"><b className="text-[#1D9B2D] font-montserrat">EPISODES</b></Link>
           <Link href="#contact"><b className="text-[#1D9B2D] font-montserrat">CONTACT</b></Link>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8 mt-6">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER</h4>
       </section>
       <section id="about">
-        <h2 className="text-[#35FF53] text-center text-5xl"><span className="font-europe">Y</span><span>our </span>
+        <h2 className="text-[#35FF53] glow text-center text-5xl "><span className="font-europe">Y</span><span>our </span>
           <span className="font-europe">H</span><span>osts</span>
         </h2>
         <div className="grid grid-cols-2 text-center my-12 mx-12 px-12 space-x-16">
@@ -89,7 +89,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section id="episode">
-        <h2 className="text-[#35FF53] text-center text-5xl mb-10"><span className="font-europe">L</span><span>atest </span>
+        <h2 className="text-[#35FF53] glow text-center text-5xl mb-10"><span className="font-europe">L</span><span>atest </span>
           <span className="font-europe">E</span><span>pisode</span>
         </h2>
           <SpotifyPlayer
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
           />
       </section>
       <section id="contact" className="mb-12">
-        <h2 className="text-[#35FF53] text-center text-5xl mb-8"><span className="font-europe">C</span><span>ontact</span></h2>
+        <h2 className="text-[#35FF53] glow text-center text-5xl mb-8"><span className="font-europe">C</span><span>ontact</span></h2>
         <p className="text-[#1A8F29] text-center text-3xl mb-12">BECOME A MEMBER OF THE WORLD DOMINATION COMMITTEE TODAY</p>
         <div className="social_media_icons flex justify-center space-x-24 mb-8">
           <Link href="mailto:committee@worlddomination.ca"><a target="_blank">
