@@ -31,7 +31,7 @@ const Home: NextPage = () => {
     <main className="bg-[#000C02]  caret-transparent overflow-hidden">
       <div className="mobile-display min-[481px]:hidden">
           <h1 className="text-[#35FF53] glow text-center text-5xl pt-12 mb-10 font-europe">WDC</h1>
-          <div className="BadBabyLogo bg-[#24C73A] w-full h-full text-center text-2xl p-4 mb-6">
+          <div className="bg-[#24C73A] w-full h-full text-center text-xl p-4 mb-6 break-words">
             <Link href="mailto:committee@worlddomination.ca">
               <a target="_blank">
                   <h3 className="font-montserrat"><b>committee@worlddomination.ca</b></h3>
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
             <p className="max-[480px]:px-8 max-[480px]:text-left text-[#1A8F29] text-2xl min-[481px]:mb-16 max-[480px]:mt-8 max-[480px]:mb-8">Submit to the World Domination Committee, a monthly podcast
               hosted by neutral evil Trynn Zala and chaotic Neutral X Zala.
             </p>
-            <h4 className="text-[#23C438] font-montserrat text-4xl min-[481px]:mb-16 max-[480px]:mb-8">THE VILLAIN&apos;S ARC</h4>
+            <h4 className="max-[480px]:px-8 text-[#23C438] font-montserrat text-4xl min-[481px]:mb-16 max-[480px]:mb-8">THE VILLAIN&apos;S ARC</h4>
             <p className="max-[480px]:text-left max-[480px]:px-8 text-[#1A8F29] text-2xl">Follow along as the Zalaz cover all things villains from
               pop culture icons such as Jafaar and Hal 9000 to real-life figures
               like Dick Cheney and Margaret Thatcher. The Zalas explore the villians journey as
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section>
-          <h4 className="text-[#23C438] font-montserrat text-center text-4xl mb-8 mt-6">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER?</h4>
+          <h4 className="max-[480px]:px-8 text-[#23C438] font-montserrat text-center text-4xl mb-8 mt-6">WHAT MAKES A BAD VILLIAN GOOD, AND A GOOD VILLAIN BETTER?</h4>
         </section>
         <section id="about">
           <h2 className="text-[#35FF53] glow text-center text-5xl max-[480px]:mb-8"><span className="font-europe">Y</span><span>our </span>
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
             </div>
             <div>
               <Image src="/images/X Headshot.jpg" alt="Photo of Xenyth" layout="fixed" width="300px" height="250px" />
-              <Link href="https://trynn.tech/">
+              <Link href="https://tapas.io/series/WWDC/">
                 <a target="_blank">
                   <h2 className="text-[#35FF53] text-5xl mt-6 mb-4"><span className="font-europe">X </span>
                     <span className="font-europe">Z</span>ala
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
         </section>
         <section id="contact" className="mb-12">
           <h2 className="text-[#35FF53] glow text-center text-5xl mb-8"><span className="font-europe">C</span><span>ontact</span></h2>
-          <p className="text-[#1A8F29] text-center text-3xl mb-12">BECOME A MEMBER OF THE WORLD DOMINATION COMMITTEE TODAY</p>
+           <p className="max-[480px]:px-8 text-[#1A8F29] text-center text-3xl mb-12">BECOME A MEMBER OF THE WORLD DOMINATION COMMITTEE TODAY</p>
           <div className="social_media_icons flex justify-center min-[481px]:space-x-24  max-[480px]:space-x-4 min-[481px]:mb-8">
             <Link href="mailto:committee@worlddomination.ca"><a target="_blank">
               <span className="max-[480px]:hidden text-center">
