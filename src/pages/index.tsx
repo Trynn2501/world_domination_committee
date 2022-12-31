@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   <>
     <Head>
       <title>World Domination Committee</title>
-      <link rel="icon" href="/images/wdc cover v05.png"/>
+      <link rel="icon" href="/images/wdc cover v05.jpg"/>
     </Head>
 
     <main className="bg-[#000C02]  caret-transparent overflow-hidden">
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
         </header>
         <section className="min-[481px]:flex min-[481px]:h-[450px] min-[481px]:mt-12 min-[481px]:mb-8 min-[481px]:mx-12 min-[481px]:pr-24">
           <div className="min-[481px]:mr-8 max-[480px]:m-auto">
-            <Image src="/images/wdc cover v05.png" alt="World Domination Committee logo with a demon repersented with green in a black background" layout="fixed" width="500px" height="450px" />
+            <Image src="/images/wdc cover v05.jpg" alt="World Domination Committee logo with a demon repersented with green in a black background" layout="fixed" width="500px" height="450px" />
           </div>
           <div className="min-[481px]:mr-8 max-[480px]:text-center">
             <p className="max-[480px]:px-8 max-[480px]:text-left text-[#1A8F29] text-2xl min-[481px]:mb-16 max-[480px]:mt-8 max-[480px]:mb-8">Submit to the World Domination Committee, a monthly podcast
