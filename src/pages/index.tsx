@@ -78,7 +78,7 @@ const Home: NextPage = () => {
           </h2>
           <div className="min-[481px]:grid min-[481px]:grid-cols-2 text-center min-[481px]:my-12 min-[481px]:mx-12 min-[481px]:px-12 min-[481px]:space-x-16">
             <div>
-              <Image src="/images/Trynn Headshot.jpg" alt="Photo of Trynn" layout="fixed" width="300px" height="250px" />
+              <Image src="/images/wdc headshot trynn.jpg" alt="Photo of Trynn" layout="fixed" width="300px" height="250px" />
               <Link href="https://trynn.tech/">
                 <a target="_blank">
                   <h2 className="text-[#35FF53] text-5xl mt-6 mb-4"><span className="font-europe">T</span><span>rynn </span>
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div>
-              <Image src="/images/X Headshot.jpg" alt="Photo of Xenyth" layout="fixed" width="300px" height="250px" />
+              <Image src="/images/wdc headshot x.jpg" alt="Photo of Xenyth" layout="fixed" width="300px" height="250px" />
               <Link href="https://tapas.io/series/WWDC/">
                 <a target="_blank">
                   <h2 className="text-[#35FF53] text-5xl mt-6 mb-4"><span className="font-europe">X </span>
