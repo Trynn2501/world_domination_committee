@@ -7,15 +7,6 @@ import { faEnvelope, faMugHot, faGhost } from '@fortawesome/free-solid-svg-icons
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faYoutube, faTwitter, faInstagram, faPatreon } from '@fortawesome/free-brands-svg-icons';
 import { useRouter } from 'next/router';
-import SpotifyPlayer from 'react-spotify-player';
-
-// size may also be a plain string using the presets 'large' or 'compact'
-const size = {
-  width: '100%',
-  height: 300,
-};
-const view = 'list'; // or 'coverart'
-const theme = 'black'; // or 'white'
 
 const Home: NextPage = () => {
 
@@ -111,12 +102,7 @@ const Home: NextPage = () => {
           <h2 className="text-[#35FF53] glow text-center text-5xl mb-10"><span className="font-europe">L</span><span>atest </span>
             <span className="font-europe">E</span><span>pisode</span>
           </h2>
-            <SpotifyPlayer
-              uri="https://open.spotify.com/show/0NtellRMzIghmTyK8TXcud?si=ac0874086f764bcc"
-              size={size}
-              view={view}
-              theme={theme}
-            />
+          <iframe src="https://open.spotify.com/embed/show/0NtellRMzIghmTyK8TXcud?utm_source=generator" width="100%" height="300" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </section>
         <section id="contact" className="mb-12">
           <h2 className="text-[#35FF53] glow text-center text-5xl mb-8"><span className="font-europe">C</span><span>ontact</span></h2>
