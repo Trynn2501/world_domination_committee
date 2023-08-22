@@ -6,11 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMugHot, faGhost } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faYoutube, faTwitter, faInstagram, faPatreon } from '@fortawesome/free-brands-svg-icons';
-import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
-
-  const router  = useRouter();
 
   return(  
   <>
